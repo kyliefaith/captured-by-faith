@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kyliefaith.github.io/captured-by-faith/sitemap-index.xml

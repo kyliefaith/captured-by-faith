@@ -1,0 +1,21 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PortfolioCard from '../../components/PortfolioCard.astro';
+
+const entries = (await getCollection('portfolio')).sort((a, b) => a.data.order - b.data.order);
+---
+
+<BaseLayout
+	title="Portfolio | Captured by Faith"
+	description="Browse portrait, family, and celebration photography stories by Captured by Faith."
+>
+	<header class="page-heading section-shell">
+		<p class="eyebrow">Portfolio</p>
+		<h1>Stories held in light.</h1>
+		<p>Portraits, families, and celebrations photographed with warmth and room to be yourself.</p>
+	</header>
+	<section class="section-shell portfolio-grid portfolio-grid-page" aria-label="Portfolio stories">
+		{entries.map((entry, index) => <PortfolioCard entry={entry} priority={index < 2} />)}
+	</section>
+</BaseLayout>

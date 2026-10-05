@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title">
+  <title id="title">Still Here sample image</title>
+  <rect width="1600" height="900" fill="#b9ccd7"/>
+  <path d="M0 0h660c-55 210-41 390 43 539S890 799 1012 900H0Z" fill="#e0a59d"/>
+  <circle cx="1112" cy="290" r="222" fill="#f3eee7"/>
+  <path d="M733 900c95-250 238-416 429-498 165 108 311 274 438 498Z" fill="#28353d"/>
+  <path d="M1178 0h422v502c-145-18-286-90-422-216Z" fill="#d45a50"/>
+</svg>

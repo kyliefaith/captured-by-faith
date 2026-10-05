@@ -1,0 +1,22 @@
+---
+import { withBase } from '../utils/paths';
+---
+
+<footer class="site-footer">
+	<div class="footer-inner">
+		<div>
+			<a class="brand footer-brand" href={withBase()}>
+				<span class="brand-mark" aria-hidden="true">CF</span>
+				<span>Captured by Faith</span>
+			</a>
+			<p>Photographs that hold the feeling of being there.</p>
+		</div>
+		<div class="footer-links">
+			<a href={withBase('/portfolio/')}>Portfolio</a>
+			<a href={withBase('/about/')}>About</a>
+			<a href={withBase('/contact/')}>Contact</a>
+			<a href="https://www.instagram.com/captured.by.faith__/" rel="me noreferrer">Instagram</a>
+		</div>
+		<p class="footer-note">© {new Date().getFullYear()} Captured by Faith</p>
+	</div>
+</footer>

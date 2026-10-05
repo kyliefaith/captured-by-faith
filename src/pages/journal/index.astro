@@ -1,0 +1,49 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { withBase } from '../../utils/paths';
+
+const entries = (await getCollection('journal')).sort(
+	(a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
+);
+---
+
+<BaseLayout
+	title="Journal | Captured by Faith"
+	description="Notes on photography, attention, and the stories behind the images."
+>
+	<header class="page-heading section-shell">
+		<p class="eyebrow">Journal</p>
+		<h1>Notes from behind the camera.</h1>
+		<p>Short reflections on attention, light, and making photographs that feel like you.</p>
+	</header>
+	<section class="journal-list section-shell" aria-label="Journal entries">
+		{
+			entries.map((entry) => (
+				<article>
+					<a href={withBase(`/journal/${entry.id}/`)}>
+						<img
+							src={withBase(entry.data.cover)}
+							alt={entry.data.coverAlt}
+							width="1200"
+							height="800"
+							loading="lazy"
+						/>
+						<div>
+							<time datetime={entry.data.date.toISOString()}>
+								{entry.data.date.toLocaleDateString('en-US', {
+									month: 'long',
+									day: 'numeric',
+									year: 'numeric',
+									timeZone: 'UTC',
+								})}
+							</time>
+							<h2>{entry.data.title}</h2>
+							<p>{entry.data.description}</p>
+						</div>
+					</a>
+				</article>
+			))
+		}
+	</section>
+</BaseLayout>

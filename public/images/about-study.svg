@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1400" role="img" aria-labelledby="title">
+  <title id="title">About page sample portrait</title>
+  <rect width="1200" height="1400" fill="#263f4c"/>
+  <path d="M0 0h525c72 238 63 454-26 647S252 1042 0 1254Z" fill="#a9bfcb"/>
+  <ellipse cx="747" cy="510" rx="286" ry="360" fill="#f1ece3"/>
+  <path d="M523 416c116-211 277-285 484-221-31 215-103 354-215 418-125-10-215-76-269-197Z" fill="#ca594e"/>
+  <path d="M353 1400c71-352 231-606 480-763 191 174 313 428 367 763Z" fill="#d6b878"/>
+</svg>
