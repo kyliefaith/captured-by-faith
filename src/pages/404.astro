@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { withBase } from '../utils/paths';
+---
+
+<BaseLayout title="Page not found | Captured by Faith" description="The requested page could not be found.">
+	<section class="not-found section-shell">
+		<p class="eyebrow">Page not found</p>
+		<h1>This frame is empty.</h1>
+		<p>The page may have moved, or the address may be incomplete.</p>
+		<a class="button button-primary" href={withBase()}>Return home</a>
+	</section>
+</BaseLayout>

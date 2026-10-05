@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title">
+  <title id="title">Beginning with attention sample image</title>
+  <rect width="1200" height="800" fill="#c7d7e2"/>
+  <circle cx="835" cy="245" r="155" fill="#d76558"/>
+  <path d="M0 492c224-126 432-147 624-64s384 91 576 24v348H0Z" fill="#304a55"/>
+  <path d="M0 625c246-61 430-33 552 84s338 147 648 90v1H0Z" fill="#eac991"/>
+</svg>

@@ -1,0 +1,42 @@
+---
+import { withBase } from '../utils/paths';
+
+const links = [
+	{ href: withBase('/portfolio/'), label: 'Portfolio' },
+	{ href: withBase('/journal/'), label: 'Journal' },
+	{ href: withBase('/about/'), label: 'About' },
+	{ href: withBase('/contact/'), label: 'Contact' },
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<header class="site-header">
+	<div class="header-inner">
+		<a class="brand" href={withBase()} aria-label="Captured by Faith home">
+			<span class="brand-mark" aria-hidden="true">CF</span>
+			<span>Captured by Faith</span>
+		</a>
+		<nav class="desktop-nav" aria-label="Primary navigation">
+			{
+				links.map((link) => (
+					<a href={link.href} aria-current={currentPath.startsWith(link.href) ? 'page' : undefined}>
+						{link.label}
+					</a>
+				))
+			}
+		</nav>
+		<details class="mobile-nav">
+			<summary>Menu</summary>
+			<nav aria-label="Mobile navigation">
+				{
+					links.map((link) => (
+						<a href={link.href} aria-current={currentPath.startsWith(link.href) ? 'page' : undefined}>
+							{link.label}
+						</a>
+					))
+				}
+			</nav>
+		</details>
+	</div>
+</header>

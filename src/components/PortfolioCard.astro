@@ -1,0 +1,31 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { withBase } from '../utils/paths';
+
+interface Props {
+	entry: CollectionEntry<'portfolio'>;
+	priority?: boolean;
+}
+
+const { entry, priority = false } = Astro.props;
+---
+
+<article class="portfolio-card">
+	<a class="portfolio-card-link" href={withBase(`/portfolio/${entry.id}/`)}>
+		<div class="portfolio-image-wrap">
+			<img
+				src={withBase(entry.data.cover)}
+				alt={entry.data.coverAlt}
+				width="1200"
+				height="1500"
+				loading={priority ? 'eager' : 'lazy'}
+				fetchpriority={priority ? 'high' : 'auto'}
+			/>
+		</div>
+		<div class="portfolio-card-copy">
+			<p>{entry.data.category}</p>
+			<h2>{entry.data.title}</h2>
+			<span aria-hidden="true">View story</span>
+		</div>
+	</a>
+</article>

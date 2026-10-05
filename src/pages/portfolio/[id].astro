@@ -1,0 +1,35 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { withBase } from '../../utils/paths';
+
+export async function getStaticPaths() {
+	const entries = await getCollection('portfolio');
+	return entries.map((entry) => ({ params: { id: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<BaseLayout title={`${entry.data.title} | Captured by Faith`} description={entry.data.description} image={entry.data.cover}>
+	<article class="story-page">
+		<header class="story-header section-shell">
+			<div>
+				<p class="eyebrow">{entry.data.category}</p>
+				<h1>{entry.data.title}</h1>
+				<p>{entry.data.description}</p>
+			</div>
+			<time datetime={entry.data.date.toISOString()}>{entry.data.date.getFullYear()}</time>
+		</header>
+		<div class="story-hero section-shell">
+			<img src={withBase(entry.data.cover)} alt={entry.data.coverAlt} width="1600" height="1100" />
+		</div>
+		<div class="prose section-shell">
+			<Content />
+		</div>
+		<nav class="story-back section-shell" aria-label="Portfolio">
+			<a class="text-link" href={withBase('/portfolio/')}>Back to portfolio</a>
+		</nav>
+	</article>
+</BaseLayout>

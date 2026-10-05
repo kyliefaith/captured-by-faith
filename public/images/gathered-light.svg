@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" role="img" aria-labelledby="title">
+  <title id="title">Gathered Light sample image</title>
+  <rect width="1200" height="1500" fill="#233f3b"/>
+  <circle cx="250" cy="315" r="230" fill="#edc38f"/>
+  <path d="M436 0h764v810C1004 693 837 655 696 696S491 837 436 997Z" fill="#d76659"/>
+  <path d="M0 967c330-109 566-73 708 109s306 242 492 180v244H0Z" fill="#a8bdc4"/>
+  <ellipse cx="818" cy="822" rx="203" ry="306" fill="#f3eee5"/>
+</svg>

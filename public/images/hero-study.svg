@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" role="img" aria-labelledby="title desc">
+  <title id="title">Sample hero artwork</title>
+  <desc id="desc">Abstract shapes suggesting a portrait in cool blue, coral, and ivory.</desc>
+  <rect width="1200" height="1500" fill="#cfdce6"/>
+  <path d="M0 1030C210 880 420 820 625 920s346 99 575-92v672H0Z" fill="#243a47"/>
+  <ellipse cx="720" cy="565" rx="285" ry="375" fill="#f2eee7"/>
+  <path d="M538 547c79-235 248-306 405-203-18 189-84 310-203 363-96-1-164-54-202-160Z" fill="#c8574e"/>
+  <circle cx="205" cy="235" r="125" fill="#e9c67a" opacity=".8"/>
+  <path d="M425 1410c76-304 238-502 486-594 128 129 224 327 289 594Z" fill="#9fb6c2"/>
+</svg>
