@@ -22,8 +22,10 @@ const journal = defineCollection({
     title: z.string(),
     description: z.string(),
     date: z.coerce.date(),
+    category: z.enum(["Bible Study", "Life Lately", "Goals & Wins"]),
     cover: z.string(),
     coverAlt: z.string(),
+    featured: z.boolean().default(false),
   }),
 });
 

@@ -15,6 +15,7 @@ const { Content } = await render(entry);
 <BaseLayout title={`${entry.data.title} | Captured by Faith`} description={entry.data.description} image={entry.data.cover}>
 	<article class="journal-article">
 		<header class="page-heading section-shell">
+			<p class="journal-category">{entry.data.category}</p>
 			<time datetime={entry.data.date.toISOString()}>
 				{entry.data.date.toLocaleDateString('en-US', {
 					month: 'long',

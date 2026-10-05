@@ -1,8 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" role="img" aria-labelledby="title">
   <title id="title">Quiet Mornings sample image</title>
-  <rect width="1200" height="1500" fill="#d9e2e7"/>
-  <rect x="92" y="110" width="560" height="1210" fill="#f4f0e8"/>
-  <ellipse cx="728" cy="650" rx="300" ry="430" fill="#6e8898"/>
-  <path d="M541 539c84-174 228-238 403-189l-76 515-327-85Z" fill="#bf665b"/>
-  <path d="M0 1270c322-180 763-172 1200 20v210H0Z" fill="#1d303b"/>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#caddeb"/>
+      <stop offset="1" stop-color="#f8e7e9"/>
+    </linearGradient>
+    <linearGradient id="field" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7c9a7a"/>
+      <stop offset="1" stop-color="#405f55"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#sky)"/>
+  <circle cx="875" cy="330" r="170" fill="#f7d889" opacity=".9"/>
+  <path d="M0 875c220-126 426-147 618-64s386 92 582 26v663H0Z" fill="url(#field)"/>
+  <path d="M0 1080c269-148 546-167 831-57 139 54 262 69 369 46v431H0Z" fill="#2f5249"/>
+  <g fill="none" stroke="#f7f1e8" stroke-width="12" stroke-linecap="round">
+    <path d="M222 1225c15-122 4-222-33-299"/><path d="M401 1300c-6-152 8-272 43-360"/><path d="M720 1268c0-130 28-238 84-324"/><path d="M1008 1324c-10-154 4-278 43-372"/>
+  </g>
+  <g fill="#f5c1cf">
+    <circle cx="189" cy="902" r="35"/><circle cx="444" cy="919" r="35"/><circle cx="806" cy="925" r="35"/><circle cx="1052" cy="930" r="35"/>
+  </g>
+  <g fill="#fffaf5">
+    <circle cx="157" cy="925" r="25"/><circle cx="220" cy="928" r="25"/><circle cx="415" cy="945" r="25"/><circle cx="474" cy="944" r="25"/><circle cx="776" cy="950" r="25"/><circle cx="838" cy="950" r="25"/><circle cx="1020" cy="955" r="25"/><circle cx="1083" cy="954" r="25"/>
+  </g>
 </svg>

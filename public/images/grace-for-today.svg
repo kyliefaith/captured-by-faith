@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title">
+  <title id="title">Open Bible and flowers sample illustration</title>
+  <rect width="1200" height="800" fill="#f7eaf0"/>
+  <circle cx="178" cy="145" r="92" fill="#f4c9d9"/>
+  <path d="M257 580c75-115 169-173 282-173 73 0 130 27 171 80 41-53 98-80 171-80 113 0 207 58 282 173-142-16-293 7-453 70-160-63-311-86-453-70Z" fill="#fffdf8" stroke="#9d7288" stroke-width="10"/>
+  <path d="M710 488v162" stroke="#9d7288" stroke-width="8"/>
+  <path d="M380 280c-55 61-74 135-58 222M397 332c-46-26-86-27-121-2M364 400c-49-12-88-2-116 29M1010 242c-55 61-74 135-58 222M1027 294c-46-26-86-27-121-2M994 362c-49-12-88-2-116 29" fill="none" stroke="#799879" stroke-width="12" stroke-linecap="round"/>
+  <g fill="#e98693"><circle cx="279" cy="320" r="24"/><circle cx="244" cy="423" r="24"/><circle cx="909" cy="282" r="24"/><circle cx="875" cy="385" r="24"/></g>
+</svg>

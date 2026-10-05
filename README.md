@@ -34,7 +34,13 @@ Portfolio entries live in `src/content/portfolio`. Copy an existing `.md` file, 
 
 Write the story below the second `---` line using standard Markdown.
 
-Journal posts follow the same pattern in `src/content/journal`.
+Journal posts follow the same pattern in `src/content/journal`. Choose one of the supported categories:
+
+- `Bible Study`
+- `Life Lately`
+- `Goals & Wins`
+
+Set `featured: true` when the post should be considered for the home page.
 
 ## Replace sample images
 

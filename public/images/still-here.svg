@@ -1,8 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title">
   <title id="title">Still Here sample image</title>
-  <rect width="1600" height="900" fill="#b9ccd7"/>
-  <path d="M0 0h660c-55 210-41 390 43 539S890 799 1012 900H0Z" fill="#e0a59d"/>
-  <circle cx="1112" cy="290" r="222" fill="#f3eee7"/>
-  <path d="M733 900c95-250 238-416 429-498 165 108 311 274 438 498Z" fill="#28353d"/>
-  <path d="M1178 0h422v502c-145-18-286-90-422-216Z" fill="#d45a50"/>
+  <defs>
+    <linearGradient id="sunset" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bdcee3"/>
+      <stop offset=".62" stop-color="#f4c7ce"/>
+      <stop offset="1" stop-color="#f7d98c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sunset)"/>
+  <circle cx="1210" cy="245" r="145" fill="#fff2c9" opacity=".9"/>
+  <path d="M0 610c280-155 536-177 769-67 221 104 498 83 831-64v421H0Z" fill="#708d78"/>
+  <path d="M0 730c353-105 678-108 975-9 201 67 410 71 625 13v166H0Z" fill="#35584e"/>
+  <g fill="none" stroke="#fffaf0" stroke-width="10" stroke-linecap="round">
+    <path d="M194 830c7-88-3-159-31-213"/><path d="M371 861c-4-112 12-199 48-261"/><path d="M1349 850c-3-100 13-181 49-244"/>
+  </g>
+  <g fill="#ec9cad"><circle cx="163" cy="603" r="28"/><circle cx="421" cy="586" r="28"/><circle cx="1399" cy="593" r="28"/></g>
 </svg>

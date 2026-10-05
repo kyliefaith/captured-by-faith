@@ -1,8 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" role="img" aria-labelledby="title">
   <title id="title">Gathered Light sample image</title>
-  <rect width="1200" height="1500" fill="#233f3b"/>
-  <circle cx="250" cy="315" r="230" fill="#edc38f"/>
-  <path d="M436 0h764v810C1004 693 837 655 696 696S491 837 436 997Z" fill="#d76659"/>
-  <path d="M0 967c330-109 566-73 708 109s306 242 492 180v244H0Z" fill="#a8bdc4"/>
-  <ellipse cx="818" cy="822" rx="203" ry="306" fill="#f3eee5"/>
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6dbe2"/>
+      <stop offset="1" stop-color="#d9e5ef"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#wall)"/>
+  <rect x="180" y="160" width="840" height="1070" rx="12" fill="#fff9f4"/>
+  <rect x="250" y="240" width="700" height="690" fill="#c9dce6"/>
+  <circle cx="725" cy="480" r="180" fill="#f5cf7c"/>
+  <path d="M250 790c170-129 339-151 506-67 74 37 139 50 194 39v168H250Z" fill="#789986"/>
+  <path d="M250 862c190-84 424-79 700 16v52H250Z" fill="#365f56"/>
+  <rect x="325" y="1000" width="550" height="36" rx="18" fill="#d98a9e"/>
+  <rect x="410" y="1070" width="380" height="24" rx="12" fill="#b798aa"/>
+  <path d="M970 1225c-102-113-147-229-135-348M938 1138c-89-8-160 16-211 72M980 1040c70-29 130-26 181 8" fill="none" stroke="#56765f" stroke-width="18" stroke-linecap="round"/>
+  <g fill="#e9859a"><circle cx="733" cy="1198" r="44"/><circle cx="1140" cy="1010" r="44"/></g>
 </svg>

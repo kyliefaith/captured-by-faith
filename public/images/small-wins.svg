@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title">
+  <title id="title">Cheerful checklist sample illustration</title>
+  <rect width="1200" height="800" fill="#e7f1ec"/>
+  <rect x="300" y="90" width="600" height="640" rx="34" fill="#fffdf8" stroke="#6f8f82" stroke-width="10"/>
+  <rect x="455" y="55" width="290" height="90" rx="40" fill="#f3b9c9"/>
+  <g fill="none" stroke="#6f8f82" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m395 268 28 30 54-72"/><path d="M530 268h230"/>
+    <path d="m395 408 28 30 54-72"/><path d="M530 408h230"/>
+    <path d="m395 548 28 30 54-72"/><path d="M530 548h230"/>
+  </g>
+  <g fill="#f1cf72"><circle cx="175" cy="190" r="70"/><circle cx="1025" cy="620" r="70"/></g>
+  <path d="M180 530c-31 52-38 103-22 153M183 585c-52-4-91 14-116 53M1025 120c-31 52-38 103-22 153M1028 175c-52-4-91 14-116 53" fill="none" stroke="#db8298" stroke-width="12" stroke-linecap="round"/>
+</svg>
